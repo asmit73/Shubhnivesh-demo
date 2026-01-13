@@ -9,8 +9,9 @@ setInterval(() => {
 }, 3500);
 
 // HAMBURGER MENU
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("show");
-}
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
-document.getElementById("menu").classList.toggle;
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+});
