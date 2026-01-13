@@ -3,78 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>Shubh Nivesh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <div class="logo-area">
-    <img src="https://dummyimage.com/50x50/c62828/ffffff&text=S" alt="Logo">
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-left">
+    <img src="https://dummyimage.com/45x45/c62828/ffffff&text=S" class="logo">
     <div class="brand">
       <h1>Shubh Nivesh</h1>
       <span>A Complete Financial Solutions</span>
     </div>
   </div>
 
-  <div class="top-right">
-    <div class="call">
-      📞 Call Us at <strong>+91 9899 930 283</strong>
-    </div>
-    <button class="login-btn">LOGIN ▾</button>
+  <div class="header-right">
+    <a href="tel:+919899930283" class="icon-btn">📞</a>
+    <a href="mailto:info@shubhnivesh.com" class="icon-btn">✉</a>
+    <button class="login-btn">LOGIN</button>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </div>
-</div>
+</header>
 
-<!-- NAVBAR -->
-<nav class="navbar"
-  <ul class="nav-menu">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
+<!-- MENU -->
+<nav class="mobile-menu" id="menu">
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
 
-    <li class="dropdown">
-      <a href="#">Financial Planning ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Retirement Planning</a></li>
-        <li><a href="#">Tax Planning</a></li>
-        <li><a href="#">Child Planning</a></li>
-      </ul>
-    </li>
+  <details>
+    <summary>Financial Planning</summary>
+    <a href="#">Retirement Planning</a>
+    <a href="#">Tax Planning</a>
+  </details>
 
-    <li class="dropdown">
-      <a href="#">Insurance ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Life Insurance</a></li>
-        <li><a href="#">Health Insurance</a></li>
-      </ul>
-    </li>
+  <details>
+    <summary>Insurance</summary>
+    <a href="#">Life Insurance</a>
+    <a href="#">Car Insurance</a>
+  </details>
 
-    <li><a href="#">Mutual Fund</a></li>
-  </ul>
+  <a href="#">Mutual Fund</a>
 </nav>
-   <section class="hero-slider">
-  <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');">
+
+<!-- HERO -->
+<section class="hero-slider">
+
+  <a href="#" class="enquire-hero-btn">Enquire Now</a>
+
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');">
     <div class="hero-content">
-      <h2>Secure Your Financial Future</h2>
-      <p>Smart financial planning for a worry-free tomorrow</p>
-      <a href="#" class="hero-btn">Enquire Now</a>
+      <h2>Financial Security</h2>
+      <p>Best Insurance Plans</p>
     </div>
   </div>
 
-  <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d1');">
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');">
     <div class="hero-content">
-      <h2>Plan Today. Relax Tomorrow.</h2>
-      <p>Personalized investment & insurance solutions</p>
-      <a href="#" class="hero-btn">Enquire Now</a>
+      <h2>Car Insurance</h2>
+      <p>Check Latest Plans</p>
     </div>
   </div>
 
-  <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7');">
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216');">
     <div class="hero-content">
-      <h2>Complete Financial Solutions</h2>
-      <p>Mutual funds, insurance & wealth planning under one roof</p>
-      <a href="#" class="hero-btn">Enquire Now</a>
+      <h2>Complete Protection</h2>
+      <p>For Your Loved Ones</p>
     </div>
   </div>
+
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+    <div class="hero-content">
+      <h2>Enjoy Every Moment of Life</h2>
+      <p>Plan Your Retirement</p>
+    </div>
+  </div>
+
 </section>
 
 <script src="script.js"></script>
