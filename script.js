@@ -8,9 +8,13 @@ setInterval(()=>{
 },4000);
 
 /* REVIEWS SLIDER */
-let track=document.querySelector(".review-track");
-let r=0;
-setInterval(()=>{
-  r=(r+1)%3;
-  track.style.transform=`translateX(-${r*100}%)`;
-},3000);
+/* ===== VERTICAL CLIENT REVIEWS SLIDER ===== */
+const reviewTrack = document.querySelector(".review-track");
+const reviews = document.querySelectorAll(".review-card");
+let currentReview = 0;
+
+setInterval(() => {
+  currentReview = (currentReview + 1) % reviews.length;
+  reviewTrack.style.transform =
+    `translateY(-${currentReview * 100}%)`;
+}, 3000); // 3 seconds
