@@ -1,209 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-
-<title>Shubh Nivesh Capital | Financial Planning, Mutual Funds & Insurance</title>
-
-<meta name="description" content="Shubh Nivesh Capital provides expert financial planning, mutual fund advisory and insurance solutions to help you build a secure financial future.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Shubh Nivesh</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="brand" onclick="location.href='index.html'">
-    <img src="https://dummyimage.com/80x80/0a3d62/ffffff&text=₹">
-    <strong>Shubh Nivesh Capital</strong>
+<header class="top-header">
+  <!-- Left: Logo + Name -->
+  <div class="logo-section">
+    <img src="logo.png" alt="Shubh Nivesh Logo" class="logo">
+    <div class="brand-text">
+      <h1>Shubh Nivesh</h1>
+      <p>A Complete Financial Solutions</p>
+    </div>
   </div>
 
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-  <nav id="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="financial-planning.html">Financial Planning</a>
-    <a href="insurance.html">Insurance</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <!-- Right: Contact + Login -->
+  <div class="header-right">
+    <div class="contact-info">
+      <span>📞 +91 98765 43210</span>
+      <span>✉ info@shubhnivesh.com</span>
+    </div>
+    <a href="#" class="login-btn">Login</a>
+  </div>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Smart Financial Planning for a Secure Future</h1>
-    <p>
-      We help individuals and families take informed financial decisions through
-      disciplined planning, expert guidance and long-term investment strategies.
-    </p>
-    <a class="btn" href="contact.html">Book Free Consultation</a>
-  </div>
-</section>
+<nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
 
-<!-- SERVICES WE OFFER -->
-<section>
-  <h2>Services We Offer</h2>
-  <p>
-    Our services are designed to simplify your financial journey and help you
-    achieve your life goals with confidence and clarity.
-  </p>
+    <li class="dropdown">
+      <a href="#">Financial Planning ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Retirement Planning</a></li>
+        <li><a href="#">Tax Planning</a></li>
+        <li><a href="#">Child Education Planning</a></li>
+        <li><a href="#">Wealth Planning</a></li>
+      </ul>
+    </li>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Mutual Fund Advisory</h3>
-      <p>
-        Personalized mutual fund recommendations based on your income,
-        risk appetite and long-term financial objectives.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>SIP Planning</h3>
-      <p>
-        Structured SIP strategies that encourage disciplined investing and
-        help build wealth gradually over time.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Financial Planning</h3>
-      <p>
-        Comprehensive planning for education, marriage, retirement and
-        wealth creation with a goal-based approach.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Insurance Planning</h3>
-      <p>
-        Right insurance solutions to protect your family and finances
-        against unforeseen risks and uncertainties.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERT OPINION -->
-<section>
-  <h2>Expert Opinion</h2>
-  <p>
-    Our philosophy is based on experience, research and practical understanding
-    of financial markets.
-  </p>
-  <blockquote>
-    “Successful investing is not about timing the market,
-    but about staying invested with discipline and patience.”
-  </blockquote>
-</section>
-
-<!-- CLIENT SPEAK -->
-<!-- CLIENT SPEAK (ADVANCED & LARGE) -->
-<section>
-  <h2>What Our Clients Say</h2>
-  <p>
-    Our clients trust us for honest guidance, simple explanations and
-    long-term focused financial planning.
-  </p>
-
-  <div class="reviews-large">
-    <div class="review-track">
-
-      <div class="review-card">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Review">
-        <div class="review-content">
-          <h3>Amit Kumar</h3>
-          <span>Salaried Professional, Delhi</span>
-          <p>
-            “Shubh Nivesh Capital helped me understand mutual funds in a very
-            simple way. Their SIP planning gave me confidence to invest for
-            long-term goals.”
-          </p>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client Review">
-        <div class="review-content">
-          <h3>Neha Sharma</h3>
-          <span>Working Professional, Patna</span>
-          <p>
-            “Very professional and transparent approach. I received proper
-            financial planning guidance instead of product pushing.”
-          </p>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client Review">
-        <div class="review-content">
-          <h3>Rahul Verma</h3>
-          <span>Business Owner, Lucknow</span>
-          <p>
-            “Clear explanations, disciplined strategy and continuous support.
-            I feel confident about my financial future now.”
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- OUR PARTNERS -->
-<section>
-  <h2>Our Partners</h2>
-  <p>
-    We work with trusted financial institutions and service providers
-    to offer reliable and diversified solutions.
-  </p>
-
-  <div class="grid">
-    <div class="card">Mutual Fund AMCs</div>
-    <div class="card">Insurance Companies</div>
-    <div class="card">Financial Institutions</div>
-    <div class="card">Wealth Platforms</div>
-  </div>
-</section>
-
-<!-- WHO WE ARE -->
-<section>
-  <h2>Who We Are</h2>
-  <p>
-    Shubh Nivesh Capital is a financial advisory platform committed to
-    transparency, ethics and long-term client success.
-  </p>
-  <p>
-    We focus on understanding your goals, educating you about options,
-    and guiding you towards suitable financial decisions.
-  </p>
-
-  <a class="btn" href="about.html">Know More About Us</a>
-</section>
-
-<!-- QUICK CONTACT -->
-<section>
-  <h2>Start Your Financial Journey Today</h2>
-  <p>
-    Take the first step towards organised and confident financial planning
-    with expert guidance.
-  </p>
-  <a class="btn" href="contact.html">Get Free Consultation</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>
-    Disclaimer: Investments are subject to market risks. Past performance
-    does not guarantee future returns.
-  </p>
-  <p>© 2026 Shubh Nivesh Capital</p>
-</footer>
+    <li><a href="#">Mutual Fund</a></li>
+  </ul>
+</nav>
 
 <script src="script.js"></script>
 </body>
