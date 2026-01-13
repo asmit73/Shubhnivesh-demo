@@ -1,18 +1,4 @@
-/* HAMBURGER MENU */
-function toggleMenu(){
-  const menu = document.getElementById("menu");
-  const burger = document.querySelector(".hamburger");
-
-  if(menu.style.display === "flex"){
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "flex";
-  }
-
-  burger.classList.toggle("active");
-}
-
-/* HERO SLIDER */
+// HERO SLIDER
 const slides = document.querySelectorAll(".slide");
 let index = 0;
 
@@ -21,3 +7,9 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   slides[index].classList.add("active");
 }, 3000);
+
+// HAMBURGER MENU
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+  document.querySelector(".hamburger").classList.toggle("active");
+}
