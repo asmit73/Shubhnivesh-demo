@@ -7,31 +7,28 @@
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="top-header">
-  <!-- Logo + Brand (Clickable Home) -->
-  <a href="index.html" class="logo-section">
-    <img src="logo.png" alt="Shubh Nivesh Logo" class="logo">
-    <div class="brand-text">
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="logo-area">
+    <img src="https://dummyimage.com/50x50/c62828/ffffff&text=S" alt="Logo">
+    <div class="brand">
       <h1>Shubh Nivesh</h1>
-      <p>A Complete Financial Solutions</p>
+      <span>A Complete Financial Solutions</span>
     </div>
-  </a>
-
-  <!-- Right Side -->
-  <div class="header-right">
-    <div class="contact-info">
-      <span>📞 +91 98765 43210</span>
-      <span>✉ info@shubhnivesh.com</span>
-    </div>
-    <a href="#" class="login-btn">Login</a>
   </div>
-</header>
 
-<!-- ===== NAVBAR ===== -->
+  <div class="top-right">
+    <div class="call">
+      📞 Call Us at <strong>+91 9899 930 283</strong>
+    </div>
+    <button class="login-btn">LOGIN ▾</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <ul class="nav-menu">
-    <li><a href="#">Home</a></li>
+    <li class="active"><a href="#">Home</a></li>
     <li><a href="#">About Us</a></li>
 
     <li class="dropdown">
@@ -39,8 +36,15 @@
       <ul class="dropdown-menu">
         <li><a href="#">Retirement Planning</a></li>
         <li><a href="#">Tax Planning</a></li>
-        <li><a href="#">Child Education Planning</a></li>
-        <li><a href="#">Wealth Planning</a></li>
+        <li><a href="#">Child Planning</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#">Insurance ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Life Insurance</a></li>
+        <li><a href="#">Health Insurance</a></li>
       </ul>
     </li>
 
@@ -48,5 +52,6 @@
   </ul>
 </nav>
 
+<script src="script.js"></script>
 </body>
 </html>
