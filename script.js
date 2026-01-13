@@ -1,15 +1,16 @@
 // HERO SLIDER
 const slides = document.querySelectorAll(".slide");
-let index = 0;
+let current = 0;
 
 setInterval(() => {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}, 3000);
+  slides[current].classList.remove("active");
+  current = (current + 1) % slides.length;
+  slides[current].classList.add("active");
+}, 3500);
 
 // HAMBURGER MENU
 function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("show");
-  document.querySelector(".hamburger").classList.toggle("active");
+  document.getElementById("menu").classList.toggle("show");
 }
+
+document.getElementById("menu").classList.toggle;
